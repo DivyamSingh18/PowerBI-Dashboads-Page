@@ -41,9 +41,8 @@
 
       .dashboard-image {
         width: 100%;
-        height: auto; /* Let the height adjust automatically based on width */
-        max-height: 150px; /* Optional, to limit the image's maximum height */
-        object-fit: contain; /* Keeps the entire image visible without cutting off */
+        max-height: 150px;
+        object-fit: cover;
         border-radius: 8px;
         margin-bottom: 15px;
       }
@@ -64,7 +63,7 @@
 
       .dashboard-link {
         text-decoration: none;
-        background-color: #007bff;
+        background-color: hsla(0, 0%, 9%, 0.706);
         color: white;
         padding: 10px 15px;
         border-radius: 6px;
@@ -73,7 +72,7 @@
       }
 
       .dashboard-link:hover {
-        background-color: #0056b3;
+        background-color: #00504e;
       }
     </style>
   </head>
@@ -87,11 +86,13 @@
           alt="Sales Dashboard"
           class="dashboard-image"
         />
-        <div class="dashboard-title">Sales Dashboard</div>
-        <div class="dashboard-description">
-          Monitor revenue trends and key sales metrics.
-        </div>
-        <a href="#" class="dashboard-link">View Dashboard</a>
+        <div class="dashboard-title">Hotel Management Dashboard</div>
+        <div class="dashboard-description"></div>
+        <a
+          href="https://app.powerbi.com/view?r=eyJrIjoiNzE1ODgxNDAtYjkxMC00Yzk0LWI2ZGUtZDhiNDRhYzUxZTEwIiwidCI6ImI2Y2RkZTM3LTFmNDctNGI2Yy1hNmMyLTE2ZDFlNDE2ZDE5OSJ9"
+          class="dashboard-link"
+          >View Dashboard</a
+        >
       </div>
 
       <div class="dashboard-card">
