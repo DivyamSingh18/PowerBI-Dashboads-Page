@@ -1,128 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Dashboard Grid View</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f6f9;
-      margin: 0;
-      padding: 20px;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard Grid View</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f6f9;
+        margin: 0;
+        padding: 20px;
+      }
 
-    h1 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
 
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
 
-    .dashboard-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s ease;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+      .dashboard-card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-    .dashboard-card:hover {
-      transform: translateY(-5px);
-    }
+      .dashboard-card:hover {
+        transform: translateY(-5px);
+      }
 
-    .dashboard-image {
-      width: 100%;
-      max-height: 150px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
+      .dashboard-image {
+        width: 100%;
+        height: auto; /* Let the height adjust automatically based on width */
+        max-height: 150px; /* Optional, to limit the image's maximum height */
+        object-fit: contain; /* Keeps the entire image visible without cutting off */
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
 
-    .dashboard-title {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 10px;
-      text-align: center;
-    }
+      .dashboard-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+      }
 
-    .dashboard-description {
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 15px;
-      text-align: center;
-    }
+      .dashboard-description {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 15px;
+        text-align: center;
+      }
 
-    .dashboard-link {
-      text-decoration: none;
-      background-color: #007bff;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 6px;
-      font-size: 14px;
-      display: inline-block;
-    }
+      .dashboard-link {
+        text-decoration: none;
+        background-color: #007bff;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 6px;
+        font-size: 14px;
+        display: inline-block;
+      }
 
-    .dashboard-link:hover {
-      background-color: #0056b3;
-    }
-  </style>
-</head>
-<body>
+      .dashboard-link:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PowerBI Dashboards</h1>
 
-  <h1>PowerBI Dashboards</h1>
+    <div class="grid-container">
+      <div class="dashboard-card">
+        <img
+          src="https://github.com/DivyamSingh18/PowerBI-Dashboads-Page/blob/main/hotel%20management%20db.png?raw=true"
+          alt="Sales Dashboard"
+          class="dashboard-image"
+        />
+        <div class="dashboard-title">Sales Dashboard</div>
+        <div class="dashboard-description">
+          Monitor revenue trends and key sales metrics.
+        </div>
+        <a href="#" class="dashboard-link">View Dashboard</a>
+      </div>
 
-  <div class="grid-container">
-    <div class="dashboard-card">
-      <img src="https://via.placeholder.com/300x150?text=Sales+Dashboard" alt="Sales Dashboard" class="dashboard-image">
-      <div class="dashboard-title">Sales Dashboard</div>
-      <div class="dashboard-description">Monitor revenue trends and key sales metrics.</div>
-      <a href="#" class="dashboard-link">View Dashboard</a>
+      <div class="dashboard-card">
+        <img
+          src="https://via.placeholder.com/300x150?text=Finance+Overview"
+          alt="Finance Overview"
+          class="dashboard-image"
+        />
+        <div class="dashboard-title">Finance Overview</div>
+        <div class="dashboard-description">
+          Track expenses, income, and profit margins.
+        </div>
+        <a href="#" class="dashboard-link">View Dashboard</a>
+      </div>
+
+      <div class="dashboard-card">
+        <img
+          src="https://via.placeholder.com/300x150?text=Inventory+Control"
+          alt="Inventory Control"
+          class="dashboard-image"
+        />
+        <div class="dashboard-title">Inventory Control</div>
+        <div class="dashboard-description">
+          Real-time inventory tracking and alerts.
+        </div>
+        <a href="#" class="dashboard-link">View Dashboard</a>
+      </div>
+
+      <div class="dashboard-card">
+        <img
+          src="https://via.placeholder.com/300x150?text=Customer+Insights"
+          alt="Customer Insights"
+          class="dashboard-image"
+        />
+        <div class="dashboard-title">Customer Insights</div>
+        <div class="dashboard-description">
+          Analyze customer behavior and satisfaction.
+        </div>
+        <a href="#" class="dashboard-link">View Dashboard</a>
+      </div>
+
+      <div class="dashboard-card">
+        <img
+          src="https://via.placeholder.com/300x150?text=Supply+Chain"
+          alt="Supply Chain"
+          class="dashboard-image"
+        />
+        <div class="dashboard-title">Supply Chain</div>
+        <div class="dashboard-description">
+          View logistics flow and bottlenecks.
+        </div>
+        <a href="#" class="dashboard-link">View Dashboard</a>
+      </div>
+
+      <div class="dashboard-card">
+        <img
+          src="https://via.placeholder.com/300x150?text=HR+Dashboard"
+          alt="HR Dashboard"
+          class="dashboard-image"
+        />
+        <div class="dashboard-title">HR Dashboard</div>
+        <div class="dashboard-description">
+          Employee performance and hiring stats.
+        </div>
+        <a href="#" class="dashboard-link">View Dashboard</a>
+      </div>
     </div>
-
-    <div class="dashboard-card">
-      <img src="https://via.placeholder.com/300x150?text=Finance+Overview" alt="Finance Overview" class="dashboard-image">
-      <div class="dashboard-title">Finance Overview</div>
-      <div class="dashboard-description">Track expenses, income, and profit margins.</div>
-      <a href="#" class="dashboard-link">View Dashboard</a>
-    </div>
-
-    <div class="dashboard-card">
-      <img src="https://via.placeholder.com/300x150?text=Inventory+Control" alt="Inventory Control" class="dashboard-image">
-      <div class="dashboard-title">Inventory Control</div>
-      <div class="dashboard-description">Real-time inventory tracking and alerts.</div>
-      <a href="#" class="dashboard-link">View Dashboard</a>
-    </div>
-
-    <div class="dashboard-card">
-      <img src="https://via.placeholder.com/300x150?text=Customer+Insights" alt="Customer Insights" class="dashboard-image">
-      <div class="dashboard-title">Customer Insights</div>
-      <div class="dashboard-description">Analyze customer behavior and satisfaction.</div>
-      <a href="#" class="dashboard-link">View Dashboard</a>
-    </div>
-
-    <div class="dashboard-card">
-      <img src="https://via.placeholder.com/300x150?text=Supply+Chain" alt="Supply Chain" class="dashboard-image">
-      <div class="dashboard-title">Supply Chain</div>
-      <div class="dashboard-description">View logistics flow and bottlenecks.</div>
-      <a href="#" class="dashboard-link">View Dashboard</a>
-    </div>
-
-    <div class="dashboard-card">
-      <img src="https://via.placeholder.com/300x150?text=HR+Dashboard" alt="HR Dashboard" class="dashboard-image">
-      <div class="dashboard-title">HR Dashboard</div>
-      <div class="dashboard-description">Employee performance and hiring stats.</div>
-      <a href="#" class="dashboard-link">View Dashboard</a>
-    </div>
-  </div>
-
-</body>
+  </body>
 </html>
